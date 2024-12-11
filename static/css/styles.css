@@ -1,0 +1,166 @@
+html {
+    font-family: monospace; /* font family for whole page */
+}
+
+*, 
+*::after, 
+*::before {
+    box-sizing: inherit; /* inherit box-sizing from body to all elements */
+}
+
+body {
+    box-sizing: border-box; /* for consistent padding and boder calculations */
+    margin: 0;  /* remove defaul margin from body */
+}
+
+.navbar {
+    max-width: 640px;
+    margin: 50px auto; /* center the navbar */
+    padding: 0 20px; /* add padding left and right */
+    display: flex; /* flexbox for layout */
+    flex-direction: row; /* arrange items in a row */
+    justify-content: space-between;
+    font-size: 24px; /* font size for navbar */
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center; /* center items vertically */
+
+}
+
+.navbar__logo {
+    margin-bottom: 30px;
+
+}
+
+.navbar__navigation {
+    display: flex; 
+    flex-direction: row;
+    padding: 0; /* remove padding */
+    list-style: none; /* remove default list styling */
+    color: #5c6b70;
+    align-items: center;
+}
+
+.navbar__navigation--item {
+    margin-left: 50px;
+}
+
+.navbar__link {
+    text-decoration: none; /* remove underline on link item */
+    color: inherit
+}
+
+.main {
+    max-width: 450px;
+    margin: 0 auto; /* center the main content area */
+    padding: 0 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /* arrange items in a column */
+    align-items: flex-end;
+}
+
+.form__input {
+    width: 100%; /* form input takes whole width */
+}
+
+.form__label {
+    display: block; /* display label as block element */
+    margin-bottom: 10px;
+}
+
+.form__textarea {
+    width: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none; /* remove border from input area */
+    background-color: #f3f6f6;
+    margin-bottom: 5px;
+}
+
+.form__submit {
+    background-color: #3cd0ff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer; /* change cursor to a pointer when hovering over element */
+}
+
+.form__submit:hover {
+    background-color: #18c1e1; /* change color sligthly when hovering over element */
+}
+
+.entry {
+    margin-top: 50px;
+}
+
+.entry__title {
+    display: inline;
+    font-size: 16px;
+}
+
+.entry__date {
+    color: #5c6b70;
+}
+
+.entry__content {
+    font-size: 14px;
+    line-height: 150%; /* for better readability */
+}
+
+.footer {
+    background-color: #323f43;
+    padding: 40px 0;
+    margin-top: 50px;
+    margin-top: 4px solid black;
+    color: white;
+    font-size: 12px;
+}
+
+.footer__content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer__item {
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__item:hover {
+    text-decoration: underline; /* give element underline when hovering over */
+    cursor: pointer;
+}
+
+.calendar__display {
+    height: 385px;
+    width: 385px; /* calender will now the same height and width */
+}
