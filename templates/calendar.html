@@ -1,0 +1,54 @@
+<!-- This template will render a calender for users to interact with-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+    <!-- Main header section-->
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img class="navbar__logo" src="/static/logo.svg" alt="Microblog logo." /> Microblog
+        </div>
+        <!-- Unordered list display -->
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation--item"> <a href="#" class="navbar__link">Recent</a></li>
+            <li class="navbar__navigation--item"> <a href="#" class="navbar__link">Calender</a></li>
+        </ul>
+    </header>
+
+    <!--Main content area-->
+    <main class="main">
+        <section>
+            <h1>Browse for older blog posts</h1>
+            <!-- User input section -->
+            <form class="form" action="/get_date" method="POST">
+                <p class="form__input">
+                    <label for="entry" class="form__label">Pick a date:</label>
+                    <input name="selected_date" id="entry" class="form__input" type="date">
+                </p>
+                <button type="submit" class="form__submit">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Foooter section -->
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a class="footer__item">Made by John Kristoffer</a>
+                <a class="footer__item">Check out my other projects!</a>
+            </section>
+            <section class="right">
+                <div class="footer__column">
+                    <a class="footer__item">About</a>
+                    <a class="footer__item">How this page was made</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
